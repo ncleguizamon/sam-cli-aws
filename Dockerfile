@@ -14,6 +14,9 @@ RUN apt-get install -y git
 RUN apt-get update && apt install python3.7-dev libffi-dev -y
 RUN curl --silent https://bootstrap.pypa.io/get-pip.py | python3.7
 
+RUN apt-get update && apt install python3.8-dev libffi-dev -y
+RUN curl --silent https://bootstrap.pypa.io/get-pip.py | python3.8
+
 RUN apt-get install curl -y &&  apt-get install zip -y 
 RUN apt-get install unzip
 
