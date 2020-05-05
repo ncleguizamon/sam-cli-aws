@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh("id")
                  script {
-                dockerImage = docker.build registry + "$BUILD_NUMBER"
+                dockerImage = docker.build registry + ":$BUILD_NUMBER"
                 } 
             }
         }
