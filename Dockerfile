@@ -19,5 +19,6 @@ RUN curl --silent https://bootstrap.pypa.io/get-pip.py | python3.7
 
 RUN apt-get update && apt install python3.8-dev libffi-dev -y
 
-
+RUN python3.7 -m pip install --upgrade pip
+RUN pip3 install awscli
 RUN pip3 install aws-sam-cli
